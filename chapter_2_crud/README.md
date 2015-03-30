@@ -6,15 +6,20 @@ CRUD (Creating, Reading and Updating Data) - Mongo shell, query operators, updat
 ### HOMEWORK ANSWER ###
 
 - HOMEWORK: HOMEWORK 2.1
+
 <!-- -->
+
     mongoimport -d students -c grades < grades.json
     use students
     db.grades.find({"type":"exam","score":{$gte:65}}).sort({"score":1}).limit(1)
 
 - HOMEWORK: HOMEWORK 2.2
+
 <!-- -->
+
     python hw2-2.py
     db.grades.aggregate({'$group':{'_id':'$student_id', 'average':{$avg:'$score'}}}, {'$sort':{'average':-1}}, {'$limit':1})
+
 
 - HOMEWORK: HOMEWORK 2.3
 

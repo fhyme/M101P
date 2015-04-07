@@ -55,3 +55,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Some File
+chapter_3_schema_design/handling_blobs/using_gridfs/sample_128_mb.txt
